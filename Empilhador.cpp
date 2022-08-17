@@ -91,10 +91,16 @@ void Empilhar(stack<string>&Pilha)
 		for (int i = 0; i < 5; i++)
 		{
 			Pilha.push(Conjunto[i]);
-			cout << Pilha.size() << ". " << Pilha.top() << endl;
+			cout << Pilha.size() << ". " << Pilha.top() << "\n\n";
+
+			for (int j = 0; j < Pilha.size(); j++)
+			{
+				cout << " " << (Pilha.size() - j) << ". " << Conjunto[Pilha.size() - j - 1] << endl;
+			}
+			cout << endl;
 		}
 
-		cout << "\n";
+		cout << "\nPRATOS EMPILHADOS\n\n";
 	}
 	else
 	{
